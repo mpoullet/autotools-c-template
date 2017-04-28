@@ -1,0 +1,32 @@
+# vi temporaries
+*.swp
+*~
+
+# Distribution tarballs
+*.tar.bz2
+*.tar.gz
+
+# Autotools temporaries
+autom4te.cache/
+build-aux/
+autoscan.log
+config.status
+config.log
+configure
+configure.scan
+Makefile
+Makefile.in
+aclocal.m4
+stamp-h1
+
+# Targets
+hello_c
+
+# Build temporaries
+.deps/
+.dirstamp
+*.o
+
+src/.deps/
+src/.dirstamp
+src/*.o
