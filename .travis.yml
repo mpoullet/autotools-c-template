@@ -1,0 +1,10 @@
+language:
+    - c
+compiler:
+    - gcc
+    - clang
+install:
+    - autoreconf --install
+    - ./configure
+    - make -j4 V=1
+
