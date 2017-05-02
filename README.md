@@ -5,7 +5,6 @@
 ## Requirements
 
 * autoconf-archive
-* cpputest
 
 ## License
 Copyright (c) 2017 Matthieu Poullet

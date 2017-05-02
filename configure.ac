@@ -18,7 +18,4 @@ AX_CHECK_COMPILE_FLAG([-std=c11], [
    exit -1
 ])
 
-PKG_CHECK_MODULES([CPPUTEST], [cpputest])
-
 AC_OUTPUT
-
