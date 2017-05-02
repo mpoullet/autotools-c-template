@@ -9,6 +9,8 @@ before_install:
     - sudo apt-get -qq update
     - sudo apt-get install -y autoconf-archive
     - sudo apt-get install -y cpputest
+    - autoconf --version
+    - automake --version
 script:
     - autoreconf --install
     - ./configure
