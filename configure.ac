@@ -1,4 +1,4 @@
-AC_PREREQ([2.69])
+AC_PREREQ([2.68])
 
 AC_INIT([hello_c], [1.0], [])
 AC_CONFIG_AUX_DIR([build-aux])
