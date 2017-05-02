@@ -14,4 +14,5 @@ script:
     - autoreconf --install
     - ./configure
     - make V=1 -j4 clean all
+after_success:
     - ./hello_c
