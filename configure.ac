@@ -3,7 +3,7 @@ AC_PREREQ([2.68])
 AC_INIT([hello_c], [1.0], [])
 AC_CONFIG_AUX_DIR([build-aux])
 
-AM_INIT_AUTOMAKE([foreign dist-bzip2 subdir-objects 1.15])
+AM_INIT_AUTOMAKE([foreign dist-bzip2 subdir-objects 1.11])
 AC_CONFIG_FILES([Makefile])
 AM_SILENT_RULES([yes])
 
