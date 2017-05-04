@@ -7,7 +7,9 @@ compiler:
     - clang
 before_install:
     - sudo apt-get -qq update
+install:
     - sudo apt-get install -y autoconf-archive
+before_script:
     - autoconf --version
     - automake --version
 script:
