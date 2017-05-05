@@ -1,20 +1,29 @@
 language:
-    - c
+- c
 dist:
-    - trusty
+- trusty
 compiler:
-    - gcc
-    - clang
+- gcc
+- clang
 before_install:
-    - sudo apt-get -qq update
+- sudo apt-get -qq update
 install:
-    - sudo apt-get install -y autoconf-archive
+- sudo apt-get install -y autoconf-archive
 before_script:
-    - autoconf --version
-    - automake --version
+- autoconf --version
+- automake --version
 script:
-    - autoreconf --install
-    - ./configure
-    - make V=1 -j4 clean all
+- autoreconf --install
+- ./configure
+- make V=1 -j4 clean all
 after_success:
-    - ./hello_c
+- ./hello_c
+deploy:
+  provider: releases
+  api_key:
+    secure: CQ3mCGqI03lUTqrs6ESCOSEfc+x2Jz0G7IyFiC1OoMe9GM7jjpLmeTNPNh+OuedlkEx9A43z6wf+9v4D0mHZc8qAw39re9w7A5go6mWcnpOpdhbbkbZ2cjaD896M0XvPzfsw+5gkvicMWBEhKxRTZiERWqMqusCNkyWI1/h9Z5+OiA5rUtcdR+6g1olV1EJ+IDKhBg0HRtvHFXuTUEYWTyFf7i1ONqR1OkDP/0okfi27ZWmJd6w6QYIYjWfHBt+NdzFtGty5yr2/yNzdAteC8Ef1UPajIEFDUOCpS8M1CO7npcLixOkKKk3z9tlkFB/M9Q1t/k8eNFa5cg/wtNFiRlQYhZUELVvrzIeRJw5Fx4Wc10UuVjuKk63+WBkVaqPTSeTScFsfDanp4heOeV/hsNbhTm5mXrnKcYtEpEUs6MH31ZLF6f+h0eUYR0yZ31WQSQwVZV7vOlCFyZLxQ2UwZ/DdYeNsxE79q/QghjgkzDQIsBsGB+F/bMhIIVyWA9K5A08dRZVHhtcmmrjd7ttRRDAnboVyFW8tqMP7muDOYBKCIvjlIUVSo46X9yFLkPivflXoYfkNlygdb7yzNocUEoqMTo1txoQM+Ea/9HLQYgtct9v299Sl1udZCcvI7RAVEAx0m+B3uA19sXX9ZJBuSNp59x5L4tvU6Jxk7tyYuqA=
+  file: hello_c-1.0.0.tar.bz2
+  skip_cleanup: true
+  on:
+    tags: true
+    repo: mpoullet/autotools-c-template
