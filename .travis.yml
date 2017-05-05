@@ -15,7 +15,7 @@ before_script:
 script:
 - autoreconf --install
 - ./configure
-- make V=1 -j4 clean all
+- make V=1 -j4 clean all dist
 after_success:
 - ./hello_c
 deploy:
