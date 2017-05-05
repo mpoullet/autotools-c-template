@@ -1,6 +1,6 @@
 AC_PREREQ([2.69])
 
-AC_INIT([hello_c], [1.0], [])
+AC_INIT([hello_c], [1.0.0], [])
 AC_CONFIG_AUX_DIR([build-aux])
 
 AM_INIT_AUTOMAKE([foreign dist-bzip2 subdir-objects 1.14])
