@@ -12,10 +12,13 @@ install:
 before_script:
 - autoconf --version
 - automake --version
+env:
+  global:
+    - MAKEFLAGS="-j 2"
 script:
 - autoreconf --install
 - ./configure
-- make V=1 -j4 clean all dist
+- make V=1 clean all dist
 after_success:
 - ./hello_c
 deploy:
