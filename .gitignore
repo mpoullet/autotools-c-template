@@ -19,6 +19,10 @@ Makefile.in
 aclocal.m4
 stamp-h1
 
+# Configuration header
+config.h
+config.h.in
+
 # Targets
 hello_c
 
