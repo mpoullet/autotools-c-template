@@ -22,6 +22,9 @@ stamp-h1
 # Targets
 hello_c
 
+# Compilation database
+compile_commands.json
+
 # Build temporaries
 .deps/
 .dirstamp
