@@ -60,7 +60,7 @@ GIT_HOOKS = [
 
 
 basicConfig(level=DEBUG)
-log = getLogger('multihooks')
+log = getLogger(basename(__file__))
 
 
 def main():
