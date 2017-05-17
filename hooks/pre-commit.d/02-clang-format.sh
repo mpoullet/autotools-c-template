@@ -14,10 +14,7 @@ maj_max=3
 base=clang-format
 format=""
 
-# Redirect output to stderr.
-exec 1>&2
-
- # check if clang-format is installed
+# check if clang-format is installed
 type "$base" >/dev/null 2>&1 && format="$base"
 
 # if not, check all possible versions
