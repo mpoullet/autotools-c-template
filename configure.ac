@@ -27,3 +27,8 @@ AX_CHECK_COMPILE_FLAG([-std=c11], [
 ])
 
 AC_OUTPUT
+
+AS_ECHO([""])
+AS_ECHO(["To build, please run: make"])
+AS_ECHO(["To install, Please run: make install"])
+AS_ECHO([""])
